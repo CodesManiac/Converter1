@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="conversionFrom">
+        <!--<item>Us Dollars</item>-->
+        <!--<item>Pounds</item>-->
+        <!--<item>Yen</item>-->
+        <!--<item>Rupees</item>-->
+        <item>Naira</item>
+        <!--<item>Euro</item>-->
+        <!--<item>Swiss Franc</item>-->
+    </string-array>
+    <string-array name="conversionTo">
+        <item>Pounds</item>
+        <item>Yen</item>
+        <item>Rupees</item>
+        <!--<item>Naira</item>-->
+        <item>Euro</item>
+        <item>Swiss Franc</item>
+        <item>US Dollars</item>
+    </string-array>
+</resources>

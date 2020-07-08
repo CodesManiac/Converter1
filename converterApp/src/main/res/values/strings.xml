@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Converter1</string>
+    <string name="convert_temperature">Convert Temperature</string>
+    <string name="convert_currency">Convert Currency</string>
+    <string name="what_do_you_want_to_do">What do you want to do?</string>
+    <string name="converter">Converter</string>
+    <string name="convert_this_amount">Convert this amount:</string>
+    <string name="to">To:</string>
+    <string name="from">From:</string>
+    <string name="convert">Convert</string>
+    <string name="convert_this_value">Convert this value:</string>
+    <string name="fahrenheit_to_celsius">Fahrenheit to Celsius</string>
+    <string name="celsius_to_fahrenheit">Celsius to Fahrenheit</string>
+    <string name="enter_value_to_convert">Enter Value to Convert</string>
+    <string name="signup">SignUp</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/right_round_shape"
+    android:orientation="vertical"
+    tools:context=".CurrencyConverter">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad1"
+        android:paddingLeft="@dimen/pad"
+        android:paddingRight="@dimen/pad"
+        android:text="@string/convert_this_amount"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/txtSize" />
+
+    <EditText
+        android:id="@+id/enteredCurrencyValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pad1"
+        android:inputType="numberDecimal"
+        android:textColor="@color/dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad"
+        android:paddingLeft="@dimen/pad"
+        android:paddingRight="@dimen/pad"
+        android:text="@string/from"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/txtSize" />
+
+    <Spinner
+        android:id="@+id/convertFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad"
+        android:layout_marginBottom="@dimen/pad1"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad"
+        android:paddingLeft="@dimen/pad"
+        android:paddingRight="@dimen/pad"
+        android:text="@string/to"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/txtSize" />
+
+    <Spinner
+        android:id="@+id/convertTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad"
+        android:layout_marginBottom="@dimen/pad1"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/convertCurrency"
+        android:onClick="currencyConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:textColor="@color/dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/convert"
+        android:textSize="@dimen/txtSize"
+        android:drawablePadding="40dp"
+
+        />
+    <TextView
+        android:id="@+id/displayCurrencyResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad1"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/pad"
+        android:paddingRight="@dimen/pad"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/txtSize" />
+
+
+</LinearLayout>

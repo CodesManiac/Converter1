@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:onClick="callDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/signup"
+            android:textSize="24sp"
+            android:textColor="#16adf3"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="90dp"
+            app:srcCompat="@drawable/strawberry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="250dp"
+            android:text="@string/converter"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/AppTheme.RoundedCornerMaterialButton1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <!--android:layout_marginTop="400dp"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/what_do_you_want_to_do"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/moveToCurrencyConverter"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+             android:layout_margin="50dp"
+            android:drawableStart="@drawable/images7"
+            android:drawableLeft="@drawable/images7"
+            android:onClick="goToCurrencyConverter"
+            android:text="@string/convert_currency"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/moveToTemperatureConverter"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/images1"
+            android:onClick="goToTemperatureConverter"
+            android:text="@string/convert_temperature"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
